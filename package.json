@@ -1,0 +1,19 @@
+{
+  "name": "eap-mvp-functions",
+  "version": "1.0.0",
+  "description": "Azure Function App for EAP MVP",
+  "main": "function_app.js",
+  "scripts": {
+    "start": "func start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@azure/functions": "^4.5.0"
+  },
+  "devDependencies": {
+    "azure-functions-core-tools": "^4.x"
+  }
+}
