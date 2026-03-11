@@ -7,7 +7,7 @@ module.exports = async function (request, context) {
         resources: []
     };
 
-    if (q1 === "beginner" && q2 === "api" && q3 === "external") {
+    if (q1 === "a1" && q2 === "b1" && q3 === "c1") {
         responseData.resources = [
             {
                 title: "API Starter Guide",
