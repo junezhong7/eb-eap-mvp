@@ -10,8 +10,8 @@ module.exports = async function (request, context) {
     if (q1 === "a1" && q2 === "b1" && q3 === "c1") {
         responseData.resources = [
             {
-                title: "API Starter Guide",
-                link: "https://sharepoint-link"
+                title: "Base on your circumstance, we recommend you to check out followwing resources about how to manage work stress.",
+                link: "https://example.sharepoint-link"
             }
         ];
     }
