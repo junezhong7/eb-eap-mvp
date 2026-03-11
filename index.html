@@ -1,30 +1,181 @@
-<h1>Find Resources</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Resources</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 30px;
+        }
+        .question-group {
+            margin-bottom: 25px;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #555;
+        }
+        select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 14px;
+            box-sizing: border-box;
+        }
+        select:focus {
+            outline: none;
+            border-color: #4CAF50;
+            box-shadow: 0 0 5px rgba(76, 175, 80, 0.3);
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        button:active {
+            background-color: #3d8b40;
+        }
+        #results {
+            margin-top: 30px;
+        }
+        .result-item {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-left: 4px solid #4CAF50;
+            margin-bottom: 15px;
+        }
+        .result-item strong {
+            display: block;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        .result-item a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        .result-item a:hover {
+            text-decoration: underline;
+        }
+        .loading {
+            color: #666;
+            font-style: italic;
+        }
+        .error {
+            color: #d32f2f;
+            padding: 10px;
+            background-color: #ffebee;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Find Resources</h1>
+        
+        <div class="question-group">
+            <label for="q1">1. What area do you work in?</label>
+            <select id="q1">
+                <option value="">-- Select --</option>
+                <option value="a1">I'm on the tools/trades</option>
+                <option value="a2">I'm in the Transport Industries</option>
+                <option value="a3">I'm working in the Care/support sector</option>
+            </select>
+        </div>
 
-<button onclick="test()">Test Recommendation</button>
+        <div class="question-group">
+            <label for="q2">2. What area do you need support in?</label>
+            <select id="q2">
+                <option value="">-- Select --</option>
+                <option value="b1">Stress & pressure at work </option>
+                <option value="b2">Sleep and switching off </option>
+                <option value="b3">Conflict with boss / coworker </option>
+                <option value="b4">Money and cost of living stressofliving stress </option>
+            </select>
+        </div>
 
-<div id="results"></div>
+        <div class="question-group">
+            <label for="q3">3. How big is this right now?</label>
+            <select id="q3">
+                <option value="">-- Select --</option>
+                <option value="c1">Annoying</option>
+                <option value="c2">Really getting to me</option>
+                <option value="c3">I’m worried I might not cope</option>
+            </select>
+        </div>
 
-<script>
+        <button onclick="getRecommendations()">Get Recommendations</button>
 
-function test(){
-    const apiUrl = "https://func-eap-dev-gjavggg2b4fdbpc7.australiaeast-01.azurewebsites.net/api/recommend?q1=beginner&q2=api&q3=external";
-    
-    fetch(apiUrl)
-        .then(res => res.json())
-        .then(data => {
-            if(data.resources && data.resources.length > 0){
-                const resource = data.resources[0];
+        <div id="results"></div>
+    </div>
+
+    <script>
+        function getRecommendations(){
+            const q1 = document.getElementById('q1').value;
+            const q2 = document.getElementById('q2').value;
+            const q3 = document.getElementById('q3').value;
+
+            // Validate selections
+            if (!q1 || !q2 || !q3) {
                 document.getElementById("results").innerHTML = 
-                    `<p><strong>${resource.title}</strong></p><p><a href="${resource.link}" target="_blank">${resource.link}</a></p>`;
-            } else {
-                document.getElementById("results").innerHTML = 
-                    "No resources found";
+                    '<div class="error">Please select all three options</div>';
+                return;
             }
-        })
-        .catch(error => {
-            document.getElementById("results").innerHTML = 
-                "Error: " + error.message;
-        });
-}
 
-</script>
+            document.getElementById("results").innerHTML = 
+                '<div class="loading">Loading recommendations...</div>';
+
+            const apiUrl = `https://func-eap-dev-gjavggg2b4fdbpc7.australiaeast-01.azurewebsites.net/api/recommend?q1=${q1}&q2=${q2}&q3=${q3}`;
+            
+            fetch(apiUrl)
+                .then(res => res.json())
+                .then(data => {
+                    if(data.resources && data.resources.length > 0){
+                        let resultsHtml = '<h2>Recommended Resources:</h2>';
+                        data.resources.forEach(resource => {
+                            resultsHtml += `
+                                <div class="result-item">
+                                    <strong>${resource.title}</strong>
+                                    <a href="${resource.link}" target="_blank">${resource.link}</a>
+                                </div>
+                            `;
+                        });
+                        document.getElementById("results").innerHTML = resultsHtml;
+                    } else {
+                        document.getElementById("results").innerHTML = 
+                            '<div class="error">No resources found for your selection.</div>';
+                    }
+                })
+                .catch(error => {
+                    document.getElementById("results").innerHTML = 
+                        `<div class="error">Error: ${error.message}</div>`;
+                });
+        }
+    </script>
+</body>
+</html>
