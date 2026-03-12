@@ -27,16 +27,21 @@ async function getRecommendationRule(q1, q2, q3, accessToken, context) {
     const siteUrl = process.env.SHAREPOINT_SITE_URL;
     const listName = process.env.SHAREPOINT_LIST_NAME;
     
-    // 提取 SharePoint 站点 ID
-    const hostName = new URL(siteUrl).hostname;
-    const sitePath = new URL(siteUrl).pathname;
-    
     try {
         context.log(`📝 查询规则: RuleKey = ${ruleKey}`);
         context.log(`🔗 SharePoint 网站: ${siteUrl}`);
         
-        // 首先获取 Site ID
-        const siteApiUrl = `https://graph.microsoft.com/v1.0/sites/${hostName}:${sitePath}`;
+        // 使用正确的格式构造 Site Hostname:sitePath
+        // 格式: hostname/sites/sitename 或 hostname:/sites/sitename:
+        const url = new URL(siteUrl);
+        const hostName = url.hostname;
+        const sitePath = url.pathname;
+        
+        // 构造正确的 Site ID 格式
+        // 对于 https://emotionalbalance.sharepoint.com/sites/EAP
+        // 格式应该是: emotionalbalance.sharepoint.com:/sites/EAP:
+        const siteItemId = `${hostName}:${sitePath}`;
+        const siteApiUrl = `https://graph.microsoft.com/v1.0/sites/${siteItemId}`;
         context.log(`🔍 获取 Site ID 请求: ${siteApiUrl}`);
         
         let siteResponse;
@@ -48,7 +53,10 @@ async function getRecommendationRule(q1, q2, q3, accessToken, context) {
                 }
             });
         } catch (siteError) {
-            context.log(`❌ 获取 Site ID 失败: ${siteError.response?.status} ${JSON.stringify(siteError.response?.data)}`);
+            context.log(`❌ 获取 Site ID 失败 (400错误常见原因: Site路径错误或权限问题)`);
+            context.log(`   请求URL: ${siteApiUrl}`);
+            context.log(`   状态码: ${siteError.response?.status}`);
+            context.log(`   错误信息: ${JSON.stringify(siteError.response?.data)}`);
             throw siteError;
         }
         
@@ -68,10 +76,12 @@ async function getRecommendationRule(q1, q2, q3, accessToken, context) {
                 }
             });
         } catch (listError) {
-            context.log(`❌ 获取 List 失败: ${listError.response?.status} ${JSON.stringify(listError.response?.data)}`);
+            context.log(`❌ 获取 List 失败: ${listError.response?.status}`);
+            context.log(`   错误: ${JSON.stringify(listError.response?.data)}`);
             throw listError;
         }
         
+        context.log(`✅ 获取到 ${listResponse.data.value.length} 个 List`);
         const list = listResponse.data.value.find(l => l.displayName === listName);
         if (!list) {
             const availableLists = listResponse.data.value.map(l => l.displayName).join(', ');
@@ -83,6 +93,7 @@ async function getRecommendationRule(q1, q2, q3, accessToken, context) {
         context.log(`✅ List ID: ${listId}`);
         
         // 查询匹配 RuleKey 的项
+        // 注意: RuleKey 字段中的管道符号需要转义
         const filterUrl = `https://graph.microsoft.com/v1.0/sites/${siteId}/lists/${listId}/items?$filter=fields/RuleKey eq '${ruleKey}'&$expand=fields`;
         context.log(`🔍 查询项请求: ${filterUrl}`);
         
@@ -95,7 +106,8 @@ async function getRecommendationRule(q1, q2, q3, accessToken, context) {
                 }
             });
         } catch (itemsError) {
-            context.log(`❌ 查询项失败: ${itemsError.response?.status} ${JSON.stringify(itemsError.response?.data)}`);
+            context.log(`❌ 查询项失败: ${itemsError.response?.status}`);
+            context.log(`   错误: ${JSON.stringify(itemsError.response?.data)}`);
             throw itemsError;
         }
         
