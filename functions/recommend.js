@@ -11,7 +11,8 @@ module.exports = async function (request, context) {
         responseData.resources = [
             {
                 title: "Base on your circumstance, we recommend you to check out followwing resources about how to manage work stress.",
-                link: "https://example.sharepoint-link"
+                link: "https://emotionalbalance.sharepoint.com/:b:/s/ResourceCenter/IQDgPz6sd0DVS7DUijR-kGzAATR-T84l2OmarbxHTwZA70Q?e=2tJ0c3",
+                linkText: "Click here to view the resource" 
             }
         ];
     }
