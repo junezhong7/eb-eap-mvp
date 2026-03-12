@@ -21,6 +21,31 @@ async function getSharePointAccessToken() {
     }
 }
 
+// 获取 SharePoint Site ID (使用 REST API)
+async function getSharePointSiteId(siteUrl, accessToken, context) {
+    try {
+        const urlObj = new URL(siteUrl);
+        const restApiUrl = `${urlObj.protocol}//${urlObj.host}${urlObj.pathname}/_api/site/id`;
+        
+        context.log(`🔍 使用 REST API 获取 Site ID: ${restApiUrl}`);
+        
+        const response = await axios.get(restApiUrl, {
+            headers: {
+                'Authorization': `Bearer ${accessToken}`,
+                'Accept': 'application/json'
+            }
+        });
+        
+        const siteId = response.data.value;
+        context.log(`✅ 获取到 Site ID: ${siteId}`);
+        return siteId;
+    } catch (error) {
+        context.log(`❌ 获取 Site ID 失败: ${error.response?.status} ${error.message}`);
+        context.log(`   错误内容: ${JSON.stringify(error.response?.data)}`);
+        throw error;
+    }
+}
+
 // 查询 SharePoint List 获取推荐规则
 async function getRecommendationRule(q1, q2, q3, accessToken, context) {
     const ruleKey = `${q1}|${q2}|${q3}`;
@@ -31,75 +56,55 @@ async function getRecommendationRule(q1, q2, q3, accessToken, context) {
         context.log(`📝 查询规则: RuleKey = ${ruleKey}`);
         context.log(`🔗 SharePoint 网站: ${siteUrl}`);
         
-        // 使用正确的格式构造 Site Hostname:sitePath
-        // 格式: hostname/sites/sitename 或 hostname:/sites/sitename:
-        const url = new URL(siteUrl);
-        const hostName = url.hostname;
-        const sitePath = url.pathname;
+        // 获取 Site ID
+        const siteId = await getSharePointSiteId(siteUrl, accessToken, context);
         
-        // 构造正确的 Site ID 格式
-        // 对于 https://emotionalbalance.sharepoint.com/sites/EAP
-        // 格式应该是: emotionalbalance.sharepoint.com:/sites/EAP:
-        const siteItemId = `${hostName}:${sitePath}`;
-        const siteApiUrl = `https://graph.microsoft.com/v1.0/sites/${siteItemId}`;
-        context.log(`🔍 获取 Site ID 请求: ${siteApiUrl}`);
+        // 使用 REST API 获取 List ID
+        const urlObj = new URL(siteUrl);
+        const getListIdUrl = `${urlObj.protocol}//${urlObj.host}${urlObj.pathname}/_api/web/lists/getByTitle('${listName}')/id`;
         
-        let siteResponse;
+        context.log(`🔍 获取 List ID: ${getListIdUrl}`);
+        
+        let listIdResponse;
         try {
-            siteResponse = await axios.get(siteApiUrl, {
-                headers: {
-                    'Authorization': `Bearer ${accessToken}`,
-                    'Accept': 'application/json'
-                }
-            });
-        } catch (siteError) {
-            context.log(`❌ 获取 Site ID 失败 (400错误常见原因: Site路径错误或权限问题)`);
-            context.log(`   请求URL: ${siteApiUrl}`);
-            context.log(`   状态码: ${siteError.response?.status}`);
-            context.log(`   错误信息: ${JSON.stringify(siteError.response?.data)}`);
-            throw siteError;
-        }
-        
-        const siteId = siteResponse.data.id;
-        context.log(`✅ Site ID: ${siteId}`);
-        
-        // 获取 List ID
-        const listApiUrl = `https://graph.microsoft.com/v1.0/sites/${siteId}/lists`;
-        context.log(`🔍 获取 List 请求: ${listApiUrl}`);
-        
-        let listResponse;
-        try {
-            listResponse = await axios.get(listApiUrl, {
+            listIdResponse = await axios.get(getListIdUrl, {
                 headers: {
                     'Authorization': `Bearer ${accessToken}`,
                     'Accept': 'application/json'
                 }
             });
         } catch (listError) {
-            context.log(`❌ 获取 List 失败: ${listError.response?.status}`);
+            context.log(`❌ 获取 List ID 失败: ${listError.response?.status}`);
             context.log(`   错误: ${JSON.stringify(listError.response?.data)}`);
+            
+            // 尝试获取所有 List 来调试
+            const listAllUrl = `${urlObj.protocol}//${urlObj.host}${urlObj.pathname}/_api/web/lists`;
+            try {
+                const allLists = await axios.get(listAllUrl, {
+                    headers: {
+                        'Authorization': `Bearer ${accessToken}`,
+                        'Accept': 'application/json'
+                    }
+                });
+                const availableLists = allLists.data.value.map(l => l.Title).join(', ');
+                context.log(`   可用的 List: ${availableLists}`);
+            } catch (e) {
+                context.log(`   无法获取 List 列表`);
+            }
             throw listError;
         }
         
-        context.log(`✅ 获取到 ${listResponse.data.value.length} 个 List`);
-        const list = listResponse.data.value.find(l => l.displayName === listName);
-        if (!list) {
-            const availableLists = listResponse.data.value.map(l => l.displayName).join(', ');
-            context.log(`❌ List "${listName}" 未找到。可用的 List: ${availableLists}`);
-            return null;
-        }
-        
-        const listId = list.id;
+        const listId = listIdResponse.data.value;
         context.log(`✅ List ID: ${listId}`);
         
         // 查询匹配 RuleKey 的项
-        // 注意: RuleKey 字段中的管道符号需要转义
-        const filterUrl = `https://graph.microsoft.com/v1.0/sites/${siteId}/lists/${listId}/items?$filter=fields/RuleKey eq '${ruleKey}'&$expand=fields`;
-        context.log(`🔍 查询项请求: ${filterUrl}`);
+        const itemsUrl = `${urlObj.protocol}//${urlObj.host}${urlObj.pathname}/_api/web/lists(guid'${listId}')/items?$filter=RuleKey eq '${ruleKey}'`;
+        
+        context.log(`🔍 查询项: ${itemsUrl}`);
         
         let itemsResponse;
         try {
-            itemsResponse = await axios.get(filterUrl, {
+            itemsResponse = await axios.get(itemsUrl, {
                 headers: {
                     'Authorization': `Bearer ${accessToken}`,
                     'Accept': 'application/json'
@@ -115,13 +120,12 @@ async function getRecommendationRule(q1, q2, q3, accessToken, context) {
         
         if (itemsResponse.data.value && itemsResponse.data.value.length > 0) {
             const item = itemsResponse.data.value[0];
-            const fields = item.fields;
-            context.log(`📦 找到的字段: ${JSON.stringify(fields)}`);
+            context.log(`📦 找到的项: ${JSON.stringify(item)}`);
             
             return {
-                title: fields.ResourceTitle || '',
-                link: fields.ResourceLink || '',
-                description: fields.Description || ''
+                title: item.ResourceTitle || '',
+                link: item.ResourceLink || '',
+                description: item.Description || ''
             };
         }
         
