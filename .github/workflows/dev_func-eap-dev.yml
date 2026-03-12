@@ -78,4 +78,12 @@ jobs:
           app-name: 'func-eap-dev'
           slot-name: 'Production'
           package: ${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}
-          
+      
+      - name: 'Configure Application Settings'
+        run: |
+          az functionapp config appsettings set --name func-eap-dev --resource-group emotional-balance-eap --settings \
+            SHAREPOINT_SITE_URL="https://emotionalbalance.sharepoint.com/sites/EAP" \
+            SHAREPOINT_LIST_NAME="RecommendationRules" \
+            AZURE_CLIENT_ID="de66026e-10bb-40b5-a574-19754c49a5bf" \
+            AZURE_TENANT_ID="210600ef-4852-49d7-ac4a-e5fabe06bb39" \
+            AZURE_CLIENT_SECRET="${{ secrets.AZURE_CLIENT_SECRET }}"
