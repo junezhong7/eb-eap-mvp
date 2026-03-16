@@ -1,0 +1,14 @@
+{
+  "a1_b1": {
+    "title": "Here are resources to help manage work stress in the trades industry.",
+    "resourceIds": ["stress_trades", "mindfulness_tradies"]
+  },
+  "a1_b2": {
+    "title": "Here are resources to help with sleep after a day on the tools.",
+    "resourceIds": ["sleep_toolkit"]
+  },
+  "a2_b1": {
+    "title": "Resources for managing stress in the transport industry.",
+    "resourceIds": ["stress_trades"]
+  }
+}
