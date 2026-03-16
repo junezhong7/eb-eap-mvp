@@ -2,6 +2,7 @@ const rules = require('./rules.json');
 const resources = require('./resources.json');
 
 module.exports = async function (request, context) {
+    const introMessage = 'Base on your circumstance, please find the recommended resources as following';
     const q1 = request.query.get('q1');
     const q2 = request.query.get('q2');
 
@@ -9,13 +10,11 @@ module.exports = async function (request, context) {
     const rule = rules[key];
 
     const responseData = {
-        title: null,
+        title: introMessage,
         resources: []
     };
 
     if (rule) {
-        responseData.title = rule.title;
-
         responseData.resources = (rule.resourceIds || [])
             .map(resourceId => resources[resourceId])
             .filter(Boolean)

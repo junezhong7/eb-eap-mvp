@@ -1,14 +1,11 @@
 {
-  "stress_trades": {
-    "text": "Managing Work Stress Guide",
-    "url": "https://emotionalbalance.sharepoint.com/..."
+  "AOK-P01": {
+    "text": "Backing a Workmate to Get Support.pdf",
+    "url": "https://emotionalbalance.sharepoint.com/:b:/s/ResourceCenter/IQDgPz6sd0DVS7DUijR-kGzAATR-T84l2OmarbxHTwZA70Q?e=mG6Ncj"
   },
-  "mindfulness_tradies": {
-    "text": "Mindfulness for Tradies",
-    "url": "https://emotionalbalance.sharepoint.com/..."
-  },
-  "sleep_toolkit": {
-    "text": "Sleep Better Toolkit",
-    "url": "https://emotionalbalance.sharepoint.com/..."
+
+  "CICR-V01": {
+    "text": "Leading Through Conflict at Work.mp4",
+    "url": "https://emotionalbalance.sharepoint.com/:v:/s/ResourceCenter/IQDk26AiHE_tR6J8hjTqKx8XAXeitamvhI5nb3E4O0j7zXc?e=ldhgmc"
   }
 }
