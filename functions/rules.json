@@ -1,14 +1,879 @@
 {
-  "a1_b1": {
-    "title": "Here are resources to help manage work stress in the trades industry.",
-    "resourceIds": ["AOK-P01","AOK-P02","CICR-V01"]
-  },
-  "a1_b2": {
-    "title": "Here are resources to help with sleep after a day on the tools.",
-    "resourceIds": ["AOK-P01"]
-  },
-  "a2_b1": {
-    "title": "Resources for managing stress in the transport industry.",
-    "resourceIds": ["CICR-V01"]
-  }
+    "a1_b1":  {
+                  "resourceIds":  [
+                                      "MHW-P13",
+                                      "MHW-P18",
+                                      "MHW-P22",
+                                      "MHW-P32",
+                                      "MHW-P34",
+                                      "SBC-P04",
+                                      "SBC-P05",
+                                      "SMF-P03",
+                                      "SMF-P04",
+                                      "SMF-P05",
+                                      "LPM-P03",
+                                      "MHW-V06",
+                                      "MHW-V08",
+                                      "SBC-V01"
+                                  ]
+              },
+    "a1_b2":  {
+                  "resourceIds":  [
+                                      "MHW-P20",
+                                      "MHW-P21",
+                                      "SMF-P02",
+                                      "MHW-V09"
+                                  ]
+              },
+    "a1_b3":  {
+                  "resourceIds":  [
+                                      "MHW-P04",
+                                      "MHW-P09",
+                                      "MHW-P24",
+                                      "SBC-P01",
+                                      "CICR-P06",
+                                      "CICR-P11",
+                                      "LPM-P25",
+                                      "MHW-V03",
+                                      "MHW-V05",
+                                      "SBC-V02",
+                                      "CICR-V01"
+                                  ]
+              },
+    "a1_b4":  {
+                  "resourceIds":  [
+                                      "FIN-P01",
+                                      "GSA-P01",
+                                      "GSA-V05"
+                                  ]
+              },
+    "a1_b5":  {
+                  "resourceIds":  [
+                                      "PYC-P01",
+                                      "PYC-P02",
+                                      "PYC-P03",
+                                      "PYC-P04",
+                                      "PYC-P05",
+                                      "PYC-P06",
+                                      "PYC-P07",
+                                      "PYC-P08",
+                                      "PYC-P09",
+                                      "PYC-P10",
+                                      "PYC-P11",
+                                      "PYC-P12",
+                                      "PYC-P13",
+                                      "PYC-P14",
+                                      "PYC-P15",
+                                      "PYC-P16",
+                                      "PYC-P17",
+                                      "PYC-P18",
+                                      "PYC-P19",
+                                      "PYC-P20",
+                                      "PYC-P21",
+                                      "PYC-P22",
+                                      "PYC-P23",
+                                      "PYC-P24",
+                                      "PYC-P25",
+                                      "PYC-P26",
+                                      "PYC-P27",
+                                      "PYC-P28",
+                                      "PYC-V01",
+                                      "PYC-V02",
+                                      "PYC-V03",
+                                      "PYC-V04",
+                                      "PYC-V06",
+                                      "PYC-V07",
+                                      "PYC-V08",
+                                      "PYC-V09",
+                                      "PYC-V10"
+                                  ]
+              },
+    "a1_b6":  {
+                  "resourceIds":  [
+                                      "PTN-P01",
+                                      "PTN-P02",
+                                      "PTN-P03",
+                                      "PTN-P04",
+                                      "PTN-P05",
+                                      "PTN-P06",
+                                      "PTN-P07",
+                                      "PTN-P08",
+                                      "PTN-P09",
+                                      "PTN-P10",
+                                      "PTN-P11",
+                                      "PTN-P12",
+                                      "PTN-P13",
+                                      "PTN-P14",
+                                      "PTN-P15",
+                                      "PTN-V01",
+                                      "PTN-V02",
+                                      "PTN-V03",
+                                      "PTN-V04",
+                                      "PTN-V05",
+                                      "PTN-V06",
+                                      "PTN-V07",
+                                      "PTN-V08",
+                                      "PTN-V09",
+                                      "PTN-V10"
+                                  ]
+              },
+    "a1_b7":  {
+                  "resourceIds":  [
+                                      "RFP-P01",
+                                      "RFP-P02",
+                                      "RFP-P03",
+                                      "MHW-P25",
+                                      "MHW-V05"
+                                  ]
+              },
+    "a1_b8":  {
+                  "resourceIds":  [
+                                      "DMV-P01",
+                                      "DMV-P02",
+                                      "DMV-V01",
+                                      "DMV-V02"
+                                  ]
+              },
+    "a1_b9":  {
+                  "resourceIds":  [
+                                      "MHW-P06",
+                                      "MHW-P07",
+                                      "CICR-P01",
+                                      "CICR-P02",
+                                      "CICR-P03",
+                                      "CICR-P10",
+                                      "MHW-V04",
+                                      "CICR-V02",
+                                      "CICR-V03"
+                                  ]
+              },
+    "a1_b10":  {
+                   "resourceIds":  [
+                                       "MHW-P02",
+                                       "MHW-P03",
+                                       "MHW-P10",
+                                       "MHW-P11",
+                                       "MHW-P16",
+                                       "MHW-P28",
+                                       "MHW-V07"
+                                   ]
+               },
+    "a1_b11":  {
+                   "resourceIds":  [
+                                       "AOK-P01",
+                                       "AOK-P02",
+                                       "AOK-P03",
+                                       "AOK-P04",
+                                       "AOK-P05",
+                                       "AOK-P06",
+                                       "AOK-P07",
+                                       "AOK-P08",
+                                       "AOK-P09",
+                                       "LPM-P08",
+                                       "MHW-P14",
+                                       "MHW-P23",
+                                       "SBC-P02",
+                                       "SBC-P03",
+                                       "MHW-V02",
+                                       "SBC-V03",
+                                       "SBC-V04"
+                                   ]
+               },
+    "a1_b12":  {
+                   "resourceIds":  [
+                                       "GSA-P01",
+                                       "GSA-P02",
+                                       "GSA-P03",
+                                       "GSA-P04",
+                                       "GSA-P05",
+                                       "GSA-P06",
+                                       "GSA-P07",
+                                       "GSA-P08",
+                                       "GSA-P09",
+                                       "GSA-P10",
+                                       "GSA-P11",
+                                       "MHW-P05",
+                                       "GSA-V01",
+                                       "GSA-V02",
+                                       "GSA-V03",
+                                       "GSA-V04",
+                                       "GSA-V05"
+                                   ]
+               },
+    "a1_b13":  {
+                   "resourceIds":  [
+                                       "MHW-P03",
+                                       "MHW-P07",
+                                       "MHW-P15",
+                                       "MHW-P31",
+                                       "MHW-V07"
+                                   ]
+               },
+    "a1_b14":  {
+                   "resourceIds":  [
+                                       "MHW-P02",
+                                       "MHW-P19",
+                                       "MHW-P30",
+                                       "MHW-P33",
+                                       "MHW-V09"
+                                   ]
+               },
+    "a1_b15":  {
+                   "resourceIds":  [
+                                       "PYC-P01",
+                                       "PYC-P13",
+                                       "PYC-P28",
+                                       "MHW-P17",
+                                       "PYC-V02",
+                                       "PYC-V10"
+                                   ]
+               },
+    "a1_b16":  {
+                   "resourceIds":  [
+                                       "PYC-P01",
+                                       "PYC-P13",
+                                       "PYC-P28",
+                                       "PYC-V02",
+                                       "PYC-V10"
+                                   ]
+               },
+    "a1_b17":  {
+                   "resourceIds":  [
+                                       "PYC-P01",
+                                       "MHW-P03",
+                                       "MHW-P07",
+                                       "MHW-V07",
+                                       "PYC-V10"
+                                   ]
+               },
+    "a1_b18":  {
+                   "resourceIds":  [
+                                       "MHW-P12",
+                                       "MHW-P26",
+                                       "MHW-P29",
+                                       "LPM-P05",
+                                       "MHW-V08"
+                                   ]
+               },
+    "a1_b19":  {
+                   "resourceIds":  [
+                                       "MHW-P01",
+                                       "MHW-P08",
+                                       "MHW-V04"
+                                   ]
+               },
+    "a1_b20":  {
+                   "resourceIds":  [
+                                       "MHW-P08",
+                                       "LPM-P04",
+                                       "LPM-P06",
+                                       "MHW-V04"
+                                   ]
+               },
+    "a2_b1":  {
+                  "resourceIds":  [
+                                      "MHW-P13",
+                                      "MHW-P34",
+                                      "SLG-P01",
+                                      "SLG-P02",
+                                      "SLG-P04",
+                                      "SLG-P05",
+                                      "SLG-P06",
+                                      "SMF-P01",
+                                      "MHW-V06",
+                                      "MHW-V08",
+                                      "SLG-V04"
+                                  ]
+              },
+    "a2_b2":  {
+                  "resourceIds":  [
+                                      "MHW-P20",
+                                      "MHW-P21",
+                                      "SLG-P03",
+                                      "MHW-V09"
+                                  ]
+              },
+    "a2_b3":  {
+                  "resourceIds":  [
+                                      "MHW-P09",
+                                      "MHW-P24",
+                                      "CICR-P06",
+                                      "MHW-V05",
+                                      "SLG-V01",
+                                      "CICR-V04"
+                                  ]
+              },
+    "a2_b4":  {
+                  "resourceIds":  [
+                                      "FIN-P01",
+                                      "GSA-P01",
+                                      "GSA-V05"
+                                  ]
+              },
+    "a2_b5":  {
+                  "resourceIds":  [
+                                      "PYC-P01",
+                                      "PYC-P05",
+                                      "PYC-P10",
+                                      "PYC-P16",
+                                      "PYC-P19",
+                                      "PYC-P26",
+                                      "PYC-V03",
+                                      "PYC-V10"
+                                  ]
+              },
+    "a2_b6":  {
+                  "resourceIds":  [
+                                      "PTN-P04",
+                                      "PTN-P07",
+                                      "PTN-P10",
+                                      "PTN-P15",
+                                      "PTN-V02",
+                                      "PTN-V05"
+                                  ]
+              },
+    "a2_b7":  {
+                  "resourceIds":  [
+                                      "RFP-P01",
+                                      "RFP-P02",
+                                      "RFP-P03",
+                                      "MHW-P25",
+                                      "MHW-V05"
+                                  ]
+              },
+    "a2_b8":  {
+                  "resourceIds":  [
+                                      "DMV-P01",
+                                      "DMV-P02",
+                                      "DMV-V01",
+                                      "DMV-V02"
+                                  ]
+              },
+    "a2_b9":  {
+                  "resourceIds":  [
+                                      "MHW-P06",
+                                      "MHW-P07",
+                                      "CICR-P01",
+                                      "CICR-P02",
+                                      "MHW-V04",
+                                      "CICR-V02"
+                                  ]
+              },
+    "a2_b10":  {
+                   "resourceIds":  [
+                                       "MHW-P02",
+                                       "MHW-P03",
+                                       "MHW-P10",
+                                       "MHW-P16",
+                                       "MHW-V07"
+                                   ]
+               },
+    "a2_b11":  {
+                   "resourceIds":  [
+                                       "AOK-P01",
+                                       "AOK-P02",
+                                       "AOK-P04",
+                                       "AOK-P07",
+                                       "AOK-P08",
+                                       "LPM-P08",
+                                       "MHW-V02",
+                                       "SLG-V02",
+                                       "SLG-V03"
+                                   ]
+               },
+    "a2_b12":  {
+                   "resourceIds":  [
+                                       "GSA-P06",
+                                       "GSA-P07",
+                                       "GSA-P09",
+                                       "GSA-P11",
+                                       "MHW-P05",
+                                       "GSA-V01",
+                                       "GSA-V02",
+                                       "GSA-V03",
+                                       "GSA-V05"
+                                   ]
+               },
+    "a2_b13":  {
+                   "resourceIds":  [
+                                       "MHW-P03",
+                                       "MHW-P07",
+                                       "MHW-P15",
+                                       "MHW-P31",
+                                       "MHW-V07"
+                                   ]
+               },
+    "a2_b14":  {
+                   "resourceIds":  [
+                                       "MHW-P02",
+                                       "MHW-P19",
+                                       "MHW-P30",
+                                       "MHW-P33",
+                                       "MHW-V09"
+                                   ]
+               },
+    "a2_b15":  {
+                   "resourceIds":  [
+                                       "PYC-P01",
+                                       "PYC-P13",
+                                       "PYC-P28",
+                                       "MHW-P17",
+                                       "PYC-V02",
+                                       "PYC-V10"
+                                   ]
+               },
+    "a2_b16":  {
+                   "resourceIds":  [
+                                       "PYC-P01",
+                                       "PYC-P13",
+                                       "PYC-P28",
+                                       "PYC-V02",
+                                       "PYC-V10"
+                                   ]
+               },
+    "a2_b17":  {
+                   "resourceIds":  [
+                                       "PYC-P01",
+                                       "MHW-P03",
+                                       "MHW-P07",
+                                       "MHW-V07",
+                                       "PYC-V10"
+                                   ]
+               },
+    "a2_b18":  {
+                   "resourceIds":  [
+                                       "MHW-P12",
+                                       "MHW-P29",
+                                       "LPM-P05",
+                                       "MHW-V08"
+                                   ]
+               },
+    "a2_b19":  {
+                   "resourceIds":  [
+                                       "MHW-P01",
+                                       "MHW-P08",
+                                       "MHW-V04"
+                                   ]
+               },
+    "a2_b20":  {
+                   "resourceIds":  [
+                                       "MHW-P17",
+                                       "LPM-P04",
+                                       "RFP-P03",
+                                       "MHW-V04",
+                                       "MHW-P08",
+                                       "LPM-P06"
+                                   ]
+               },
+    "a3_b1":  {
+                  "resourceIds":  [
+                                      "MHW-P13",
+                                      "MHW-P27",
+                                      "MHW-P34",
+                                      "SHC-P03",
+                                      "SHC-P05",
+                                      "MHW-V08",
+                                      "SHC-V04"
+                                  ]
+              },
+    "a3_b2":  {
+                  "resourceIds":  [
+                                      "MHW-P20",
+                                      "MHW-P21",
+                                      "MHW-V09"
+                                  ]
+              },
+    "a3_b3":  {
+                  "resourceIds":  [
+                                      "MHW-P09",
+                                      "MHW-P24",
+                                      "SHC-P01",
+                                      "CICR-P06",
+                                      "CICR-P07",
+                                      "MHW-V05",
+                                      "SHC-V01",
+                                      "CICR-V03"
+                                  ]
+              },
+    "a3_b4":  {
+                  "resourceIds":  [
+                                      "FIN-P01",
+                                      "GSA-P01",
+                                      "GSA-V05"
+                                  ]
+              },
+    "a3_b5":  {
+                  "resourceIds":  [
+                                      "PYC-P01",
+                                      "PYC-P05",
+                                      "PYC-P10",
+                                      "PYC-P16",
+                                      "PYC-P19",
+                                      "PYC-P26",
+                                      "PYC-V03",
+                                      "PYC-V10"
+                                  ]
+              },
+    "a3_b6":  {
+                  "resourceIds":  [
+                                      "PTN-P04",
+                                      "PTN-P07",
+                                      "PTN-P10",
+                                      "PTN-P15",
+                                      "PTN-V02",
+                                      "PTN-V05"
+                                  ]
+              },
+    "a3_b7":  {
+                  "resourceIds":  [
+                                      "RFP-P01",
+                                      "RFP-P02",
+                                      "RFP-P03",
+                                      "MHW-P25",
+                                      "MHW-V05"
+                                  ]
+              },
+    "a3_b8":  {
+                  "resourceIds":  [
+                                      "DMV-P01",
+                                      "DMV-P02",
+                                      "DMV-V01",
+                                      "DMV-V02"
+                                  ]
+              },
+    "a3_b9":  {
+                  "resourceIds":  [
+                                      "MHW-P06",
+                                      "MHW-P07",
+                                      "SHC-P04",
+                                      "CICR-P01",
+                                      "CICR-P03",
+                                      "CICR-P08",
+                                      "MHW-V04",
+                                      "SHC-V05",
+                                      "CICR-V04"
+                                  ]
+              },
+    "a3_b10":  {
+                   "resourceIds":  [
+                                       "MHW-P02",
+                                       "MHW-P03",
+                                       "MHW-P10",
+                                       "MHW-P16",
+                                       "MHW-V07"
+                                   ]
+               },
+    "a3_b11":  {
+                   "resourceIds":  [
+                                       "AOK-P01",
+                                       "AOK-P02",
+                                       "AOK-P04",
+                                       "AOK-P07",
+                                       "AOK-P08",
+                                       "LPM-P08",
+                                       "MHW-V02"
+                                   ]
+               },
+    "a3_b12":  {
+                   "resourceIds":  [
+                                       "GSA-P06",
+                                       "GSA-P07",
+                                       "GSA-P09",
+                                       "GSA-P11",
+                                       "MHW-P05",
+                                       "GSA-V01",
+                                       "GSA-V02",
+                                       "GSA-V03",
+                                       "GSA-V05"
+                                   ]
+               },
+    "a3_b13":  {
+                   "resourceIds":  [
+                                       "MHW-P03",
+                                       "MHW-P07",
+                                       "MHW-P15",
+                                       "MHW-P31",
+                                       "MHW-V07"
+                                   ]
+               },
+    "a3_b14":  {
+                   "resourceIds":  [
+                                       "MHW-P02",
+                                       "MHW-P19",
+                                       "MHW-P30",
+                                       "MHW-P33",
+                                       "MHW-V09"
+                                   ]
+               },
+    "a3_b15":  {
+                   "resourceIds":  [
+                                       "PYC-P01",
+                                       "PYC-P13",
+                                       "PYC-P28",
+                                       "MHW-P17",
+                                       "PYC-V02",
+                                       "PYC-V10"
+                                   ]
+               },
+    "a3_b16":  {
+                   "resourceIds":  [
+                                       "PYC-P01",
+                                       "PYC-P13",
+                                       "PYC-P28",
+                                       "PYC-V02",
+                                       "PYC-V10"
+                                   ]
+               },
+    "a3_b17":  {
+                   "resourceIds":  [
+                                       "PYC-P01",
+                                       "MHW-P03",
+                                       "MHW-P07",
+                                       "MHW-V07",
+                                       "PYC-V10"
+                                   ]
+               },
+    "a3_b18":  {
+                   "resourceIds":  [
+                                       "MHW-P12",
+                                       "MHW-P29",
+                                       "LPM-P05",
+                                       "MHW-V08"
+                                   ]
+               },
+    "a3_b19":  {
+                   "resourceIds":  [
+                                       "MHW-P01",
+                                       "MHW-P08",
+                                       "SHC-P02",
+                                       "MHW-V04",
+                                       "SHC-V02",
+                                       "SHC-V03"
+                                   ]
+               },
+    "a3_b20":  {
+                   "resourceIds":  [
+                                       "MHW-P08",
+                                       "LPM-P04",
+                                       "LPM-P06",
+                                       "MHW-V04"
+                                   ]
+               },
+    "a4_b1":  {
+                  "resourceIds":  [
+                                      "LPM-P09",
+                                      "LPM-P11",
+                                      "LPM-P12",
+                                      "LPM-P13",
+                                      "LPM-P21",
+                                      "LPM-P22",
+                                      "LPM-P24",
+                                      "MHW-P13",
+                                      "MHW-P18",
+                                      "MHW-P32",
+                                      "MHW-V01",
+                                      "MHW-V08"
+                                  ]
+              },
+    "a4_b2":  {
+                  "resourceIds":  [
+                                      "MHW-P20",
+                                      "MHW-P21",
+                                      "LPM-P16",
+                                      "LPM-P23",
+                                      "MHW-V09"
+                                  ]
+              },
+    "a4_b3":  {
+                  "resourceIds":  [
+                                      "LPM-P01",
+                                      "LPM-P10",
+                                      "LPM-P15",
+                                      "LPM-P17",
+                                      "LPM-P19",
+                                      "LPM-P20",
+                                      "LPM-P25",
+                                      "CICR-P04",
+                                      "CICR-P05",
+                                      "CICR-P09",
+                                      "CICR-P10",
+                                      "MHW-V03",
+                                      "MHW-V05",
+                                      "CICR-V01",
+                                      "CICR-V02"
+                                  ]
+              },
+    "a4_b4":  {
+                  "resourceIds":  [
+                                      "FIN-P01",
+                                      "GSA-P01",
+                                      "GSA-V05"
+                                  ]
+              },
+    "a4_b5":  {
+                  "resourceIds":  [
+                                      "PYC-P01",
+                                      "PYC-P05",
+                                      "PYC-P10",
+                                      "PYC-P16",
+                                      "PYC-P19",
+                                      "PYC-P26",
+                                      "PYC-V03",
+                                      "PYC-V10"
+                                  ]
+              },
+    "a4_b6":  {
+                  "resourceIds":  [
+                                      "PTN-P04",
+                                      "PTN-P07",
+                                      "PTN-P10",
+                                      "PTN-P15",
+                                      "PTN-V02",
+                                      "PTN-V05"
+                                  ]
+              },
+    "a4_b7":  {
+                  "resourceIds":  [
+                                      "RFP-P01",
+                                      "RFP-P02",
+                                      "RFP-P03",
+                                      "MHW-P25",
+                                      "MHW-V05"
+                                  ]
+              },
+    "a4_b8":  {
+                  "resourceIds":  [
+                                      "DMV-P01",
+                                      "DMV-P02",
+                                      "DMV-V01",
+                                      "DMV-V02"
+                                  ]
+              },
+    "a4_b9":  {
+                  "resourceIds":  [
+                                      "MHW-P06",
+                                      "MHW-P07",
+                                      "CICR-P01",
+                                      "CICR-P02",
+                                      "LPM-P04",
+                                      "MHW-V04",
+                                      "CICR-V03"
+                                  ]
+              },
+    "a4_b10":  {
+                   "resourceIds":  [
+                                       "MHW-P02",
+                                       "MHW-P03",
+                                       "MHW-P10",
+                                       "MHW-P11",
+                                       "MHW-P16",
+                                       "MHW-P28",
+                                       "LPM-P14",
+                                       "MHW-V07"
+                                   ]
+               },
+    "a4_b11":  {
+                   "resourceIds":  [
+                                       "AOK-P01",
+                                       "AOK-P02",
+                                       "AOK-P04",
+                                       "AOK-P07",
+                                       "AOK-P08",
+                                       "LPM-P02",
+                                       "LPM-P07",
+                                       "LPM-P08",
+                                       "LPM-P18",
+                                       "MHW-P14",
+                                       "MHW-P23",
+                                       "MHW-V02",
+                                       "CICR-V01"
+                                   ]
+               },
+    "a4_b12":  {
+                   "resourceIds":  [
+                                       "GSA-P06",
+                                       "GSA-P07",
+                                       "GSA-P09",
+                                       "GSA-P11",
+                                       "MHW-P05",
+                                       "GSA-V01",
+                                       "GSA-V02",
+                                       "GSA-V03",
+                                       "GSA-V05"
+                                   ]
+               },
+    "a4_b13":  {
+                   "resourceIds":  [
+                                       "MHW-P03",
+                                       "MHW-P12",
+                                       "MHW-P26",
+                                       "MHW-P30",
+                                       "LPM-P05",
+                                       "LPM-P13",
+                                       "MHW-V07",
+                                       "MHW-V09"
+                                   ]
+               },
+    "a4_b14":  {
+                   "resourceIds":  [
+                                       "MHW-P01",
+                                       "MHW-P04",
+                                       "MHW-P08",
+                                       "LPM-P01",
+                                       "MHW-V04"
+                                   ]
+               },
+    "a4_b15":  {
+                   "resourceIds":  [
+                                       "PYC-P01",
+                                       "PYC-P13",
+                                       "PYC-P28",
+                                       "MHW-P17",
+                                       "PYC-V02",
+                                       "PYC-V10"
+                                   ]
+               },
+    "a4_b16":  {
+                   "resourceIds":  [
+                                       "PYC-P01",
+                                       "PYC-P13",
+                                       "PYC-P28",
+                                       "PYC-V02",
+                                       "PYC-V10"
+                                   ]
+               },
+    "a4_b17":  {
+                   "resourceIds":  [
+                                       "PYC-P01",
+                                       "MHW-P03",
+                                       "MHW-P07",
+                                       "MHW-V07",
+                                       "PYC-V10"
+                                   ]
+               },
+    "a4_b18":  {
+                   "resourceIds":  [
+                                       "MHW-P12",
+                                       "MHW-P29",
+                                       "LPM-P05",
+                                       "LPM-P14",
+                                       "MHW-V08"
+                                   ]
+               },
+    "a4_b19":  {
+                   "resourceIds":  [
+                                       "MHW-P01",
+                                       "MHW-P08",
+                                       "LPM-P01",
+                                       "MHW-V04"
+                                   ]
+               },
+    "a4_b20":  {
+                   "resourceIds":  [
+                                       "MHW-P08",
+                                       "LPM-P04",
+                                       "LPM-P06",
+                                       "MHW-V04"
+                                   ]
+               }
 }
