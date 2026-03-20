@@ -1,0 +1,858 @@
+{
+  "AOK-P01": {
+    "text": "Backing a Workmate to Get Support.pdf",
+    "url": "https://eb.example"
+  },
+  "AOK-P02": {
+    "text": "Checking In Before It’s Too Late.pdf",
+    "url": "https://eb.example"
+  },
+  "AOK-P03": {
+    "text": "Helpful Things to Say in Hard Moments.pdf",
+    "url": "https://eb.example"
+  },
+  "AOK-P04": {
+    "text": "Spotting When a Mate’s Doing It Tough.pdf",
+    "url": "https://eb.example"
+  },
+  "AOK-P05": {
+    "text": "Standing Beside Someone When They’re Struggling.pdf",
+    "url": "https://eb.example"
+  },
+  "AOK-P06": {
+    "text": "Things We Miss When Someone’s Struggling.pdf",
+    "url": "https://eb.example"
+  },
+  "AOK-P07": {
+    "text": "What to Say When Someone Opens Up.pdf",
+    "url": "https://eb.example"
+  },
+  "AOK-P08": {
+    "text": "When the Load Gets Heavy.pdf",
+    "url": "https://eb.example"
+  },
+  "AOK-P09": {
+    "text": "When Things Feel Off.pdf",
+    "url": "https://eb.example"
+  },
+  "CICR-P01": {
+    "text": "Checking In After a Tough Incident.pdf",
+    "url": "https://eb.example"
+  },
+  "CICR-P02": {
+    "text": "Crisis and Critical Incident Response Guide.pdf",
+    "url": "https://eb.example"
+  },
+  "CICR-P03": {
+    "text": "Holding Steady After Critical Incidents.pdf",
+    "url": "https://eb.example"
+  },
+  "CICR-P04": {
+    "text": "Holding the Team Together After an Incident.pdf",
+    "url": "https://eb.example"
+  },
+  "CICR-P05": {
+    "text": "Leading a Debrief After Serious Incidents.pdf",
+    "url": "https://eb.example"
+  },
+  "CICR-P06": {
+    "text": "Resolving Conflict in Your Team.pdf",
+    "url": "https://eb.example"
+  },
+  "CICR-P07": {
+    "text": "Supporting Staff After Violence or Aggression.pdf",
+    "url": "https://eb.example"
+  },
+  "CICR-P08": {
+    "text": "Supporting Staff Back to Work After Serious Events.pdf",
+    "url": "https://eb.example"
+  },
+  "CICR-P09": {
+    "text": "What Leaders Should Know About Trauma at Work.pdf",
+    "url": "https://eb.example"
+  },
+  "CICR-P10": {
+    "text": "What to Do in the First Moments of a Crisis.pdf",
+    "url": "https://eb.example"
+  },
+  "CICR-P11": {
+    "text": "What to Say in High-Pressure Moments.pdf",
+    "url": "https://eb.example"
+  },
+  "CICR-V01": {
+    "text": "Leading Through Conflict at Work.mp4",
+    "url": "https://eb.example"
+  },
+  "CICR-V02": {
+    "text": "Responding Calmly to a Critical Incident at Work.mp4",
+    "url": "https://eb.example"
+  },
+  "CICR-V03": {
+    "text": "Supporting Staff After Aggression or Threatening Behaviour.mp4",
+    "url": "https://eb.example"
+  },
+  "CICR-V04": {
+    "text": "Supporting Staff in Distress During a Critical Incident.mp4",
+    "url": "https://eb.example"
+  },
+  "DMV-P01": {
+    "text": "Finding Support Without Putting Yourself at Risk.pdf",
+    "url": "https://eb.example"
+  },
+  "DMV-P02": {
+    "text": "Spotting the Signs of Domestic Abuse.pdf",
+    "url": "https://eb.example"
+  },
+  "DMV-V01": {
+    "text": "Reaching out Safely when DV is a concern.mp4",
+    "url": "https://eb.example"
+  },
+  "DMV-V02": {
+    "text": "When Safety at Home  Is a Concern.mp4",
+    "url": "https://eb.example"
+  },
+  "FIN-P01": {
+    "text": "When Money’s Causing Stress.pdf",
+    "url": "https://eb.example"
+  },
+  "GSA-P01": {
+    "text": "Budgeting and Financial Recovery after Substance Impact.pdf",
+    "url": "https://eb.example"
+  },
+  "GSA-P02": {
+    "text": "Finding Your Feet After Gambling.pdf",
+    "url": "https://eb.example"
+  },
+  "GSA-P03": {
+    "text": "How to Block Gambling Access.pdf",
+    "url": "https://eb.example"
+  },
+  "GSA-P04": {
+    "text": "Putting Boundaries Around Gambling.pdf",
+    "url": "https://eb.example"
+  },
+  "GSA-P05": {
+    "text": "Staying on Track When Urges Hit.pdf",
+    "url": "https://eb.example"
+  },
+  "GSA-P06": {
+    "text": "Talking to Someone About Their Drinking or Drug Use.pdf",
+    "url": "https://eb.example"
+  },
+  "GSA-P07": {
+    "text": "When Alcohol or Drugs Start Affecting Work.pdf",
+    "url": "https://eb.example"
+  },
+  "GSA-P08": {
+    "text": "When Gambling Is Impacting Your Job.pdf",
+    "url": "https://eb.example"
+  },
+  "GSA-P09": {
+    "text": "When Gambling Starts to Get Out of Control.pdf",
+    "url": "https://eb.example"
+  },
+  "GSA-P10": {
+    "text": "When You’re Worried About Someone’s Gambling.pdf",
+    "url": "https://eb.example"
+  },
+  "GSA-P11": {
+    "text": "Why the Urge to Gamble Shows Up.pdf",
+    "url": "https://eb.example"
+  },
+  "GSA-V01": {
+    "text": "Staying on track in Gambling Recovery.mp4",
+    "url": "https://eb.example"
+  },
+  "GSA-V02": {
+    "text": "Support Around Alcohol and Other Substances.mp4",
+    "url": "https://eb.example"
+  },
+  "GSA-V03": {
+    "text": "When Gambling Starts to Affect Work.mp4",
+    "url": "https://eb.example"
+  },
+  "GSA-V04": {
+    "text": "When Gambling Starts to Feel Harder to Manage.mp4",
+    "url": "https://eb.example"
+  },
+  "GSA-V05": {
+    "text": "Why Gambling Conversations Matter.mp4",
+    "url": "https://eb.example"
+  },
+  "LPM-P01": {
+    "text": "Creating a Respectful Workplace.pdf",
+    "url": "https://eb.example"
+  },
+  "LPM-P02": {
+    "text": "Creating a Workplace Where People Feel Heard.pdf",
+    "url": "https://eb.example"
+  },
+  "LPM-P03": {
+    "text": "Easing Back into Work after an injury.pdf",
+    "url": "https://eb.example"
+  },
+  "LPM-P04": {
+    "text": "Handling Life’s Curveballs.pdf",
+    "url": "https://eb.example"
+  },
+  "LPM-P05": {
+    "text": "Handling Self-Doubt at Work.pdf",
+    "url": "https://eb.example"
+  },
+  "LPM-P06": {
+    "text": "Handling Uncertain Times.pdf",
+    "url": "https://eb.example"
+  },
+  "LPM-P07": {
+    "text": "Helping Teams Navigate Change.pdf",
+    "url": "https://eb.example"
+  },
+  "LPM-P08": {
+    "text": "How to Check In on Someone.pdf",
+    "url": "https://eb.example"
+  },
+  "LPM-P09": {
+    "text": "How to Lead Without Taking It All On.pdf",
+    "url": "https://eb.example"
+  },
+  "LPM-P10": {
+    "text": "How to Talk About Performance Respectfully.pdf",
+    "url": "https://eb.example"
+  },
+  "LPM-P11": {
+    "text": "Leadership That Feels Safe and Steady.pdf",
+    "url": "https://eb.example"
+  },
+  "LPM-P12": {
+    "text": "Leading Teams in High-Pressure Roles.pdf",
+    "url": "https://eb.example"
+  },
+  "LPM-P13": {
+    "text": "Looking After Yourself at Work.pdf",
+    "url": "https://eb.example"
+  },
+  "LPM-P14": {
+    "text": "Recognising What Pushes Your Buttons.pdf",
+    "url": "https://eb.example"
+  },
+  "LPM-P15": {
+    "text": "Safe and Supportive Communication.pdf",
+    "url": "https://eb.example"
+  },
+  "LPM-P16": {
+    "text": "Simple Ways to Improve Your Sleep.pdf",
+    "url": "https://eb.example"
+  },
+  "LPM-P17": {
+    "text": "Sorting Out Workplace Conflict.pdf",
+    "url": "https://eb.example"
+  },
+  "LPM-P18": {
+    "text": "Spotting Changes in Team Mood.pdf",
+    "url": "https://eb.example"
+  },
+  "LPM-P19": {
+    "text": "Staying Calm in Tough Conversations.pdf",
+    "url": "https://eb.example"
+  },
+  "LPM-P20": {
+    "text": "Stopping Situations from Boiling Over.pdf",
+    "url": "https://eb.example"
+  },
+  "LPM-P21": {
+    "text": "Ways to Reset When You’re Stressed.pdf",
+    "url": "https://eb.example"
+  },
+  "LPM-P22": {
+    "text": "What to Do When Your Team Is Burning Out.pdf",
+    "url": "https://eb.example"
+  },
+  "LPM-P23": {
+    "text": "When You’re Always Tired.pdf",
+    "url": "https://eb.example"
+  },
+  "LPM-P24": {
+    "text": "When You’re Running on Empty.pdf",
+    "url": "https://eb.example"
+  },
+  "LPM-P25": {
+    "text": "Working with Challenging People.pdf",
+    "url": "https://eb.example"
+  },
+  "MHW-P01": {
+    "text": "Building Trust at Work.pdf",
+    "url": "https://eb.example"
+  },
+  "MHW-P02": {
+    "text": "Calm Tools for Heated Moments.pdf",
+    "url": "https://eb.example"
+  },
+  "MHW-P03": {
+    "text": "Coping with Ongoing Low Mood.pdf",
+    "url": "https://eb.example"
+  },
+  "MHW-P04": {
+    "text": "Creating a Respectful Workplace.pdf",
+    "url": "https://eb.example"
+  },
+  "MHW-P05": {
+    "text": "Cutting Back on Alcohol or Drugs.pdf",
+    "url": "https://eb.example"
+  },
+  "MHW-P06": {
+    "text": "Finding Your Feet After a Tough Day.pdf",
+    "url": "https://eb.example"
+  },
+  "MHW-P07": {
+    "text": "Finding Your Feet Again.pdf",
+    "url": "https://eb.example"
+  },
+  "MHW-P08": {
+    "text": "Handling Change with Confidence.pdf",
+    "url": "https://eb.example"
+  },
+  "MHW-P09": {
+    "text": "Handling Conflict at Work.pdf",
+    "url": "https://eb.example"
+  },
+  "MHW-P10": {
+    "text": "Handling Heated Moments Calmly.pdf",
+    "url": "https://eb.example"
+  },
+  "MHW-P11": {
+    "text": "Handling Long-Term Exhaustion.pdf",
+    "url": "https://eb.example"
+  },
+  "MHW-P12": {
+    "text": "Handling Self-Doubt at Work.pdf",
+    "url": "https://eb.example"
+  },
+  "MHW-P13": {
+    "text": "Handling Stress at Work.pdf",
+    "url": "https://eb.example"
+  },
+  "MHW-P14": {
+    "text": "How to Check In on Someone.pdf",
+    "url": "https://eb.example"
+  },
+  "MHW-P15": {
+    "text": "Improving Focus When You Feel Flat.pdf",
+    "url": "https://eb.example"
+  },
+  "MHW-P16": {
+    "text": "Keeping Your Emotions in Check.pdf",
+    "url": "https://eb.example"
+  },
+  "MHW-P17": {
+    "text": "Looking After Yourself at Work.pdf",
+    "url": "https://eb.example"
+  },
+  "MHW-P18": {
+    "text": "Managing Your Energy at Work.pdf",
+    "url": "https://eb.example"
+  },
+  "MHW-P19": {
+    "text": "Quick Ways to Reset During the Day.pdf",
+    "url": "https://eb.example"
+  },
+  "MHW-P20": {
+    "text": "Simple Habits for Better Sleep.pdf",
+    "url": "https://eb.example"
+  },
+  "MHW-P21": {
+    "text": "Simple Ways to Sleep Better.pdf",
+    "url": "https://eb.example"
+  },
+  "MHW-P22": {
+    "text": "Spotting Burnout vs Everyday Stress.pdf",
+    "url": "https://eb.example"
+  },
+  "MHW-P23": {
+    "text": "Spotting Changes in Workplace Mood.pdf",
+    "url": "https://eb.example"
+  },
+  "MHW-P24": {
+    "text": "Staying Calm in Tough Conversations.pdf",
+    "url": "https://eb.example"
+  },
+  "MHW-P25": {
+    "text": "Strong Boundaries, Respectful Conversations.pdf",
+    "url": "https://eb.example"
+  },
+  "MHW-P26": {
+    "text": "Supporting ADHD in the Workplace.pdf",
+    "url": "https://eb.example"
+  },
+  "MHW-P27": {
+    "text": "The Cost of Caring Too Much for Too Long.pdf",
+    "url": "https://eb.example"
+  },
+  "MHW-P28": {
+    "text": "Understanding What Pushes Your Buttons.pdf",
+    "url": "https://eb.example"
+  },
+  "MHW-P29": {
+    "text": "Ways to Reset When You’re Stressed.pdf",
+    "url": "https://eb.example"
+  },
+  "MHW-P30": {
+    "text": "When Anxiety Takes Over.pdf",
+    "url": "https://eb.example"
+  },
+  "MHW-P31": {
+    "text": "When Stress Takes the Wheel.pdf",
+    "url": "https://eb.example"
+  },
+  "MHW-P32": {
+    "text": "When You’re Running on Empty.pdf",
+    "url": "https://eb.example"
+  },
+  "MHW-P33": {
+    "text": "When Your Thoughts Won’t Switch Off.pdf",
+    "url": "https://eb.example"
+  },
+  "MHW-P34": {
+    "text": "Working in High-Pressure Roles.pdf",
+    "url": "https://eb.example"
+  },
+  "MHW-V01": {
+    "text": "Finding Calm in your Day.mp4",
+    "url": "https://eb.example"
+  },
+  "MHW-V02": {
+    "text": "Making Space for Check-Ins.mp4",
+    "url": "https://eb.example"
+  },
+  "MHW-V03": {
+    "text": "Practical Ways to stay in Control.mp4",
+    "url": "https://eb.example"
+  },
+  "MHW-V04": {
+    "text": "Steading Yourself When Life Gets Loud.mp4",
+    "url": "https://eb.example"
+  },
+  "MHW-V05": {
+    "text": "Tools for Managing Conflict at Work.mp4",
+    "url": "https://eb.example"
+  },
+  "MHW-V06": {
+    "text": "When Fatigue Starts to Show.mp4",
+    "url": "https://eb.example"
+  },
+  "MHW-V07": {
+    "text": "When Low Mood Starts to Weigh You Down.mp4",
+    "url": "https://eb.example"
+  },
+  "MHW-V08": {
+    "text": "When Work Takes Too Much.mp4",
+    "url": "https://eb.example"
+  },
+  "MHW-V09": {
+    "text": "When Worry Feels Hard to Switch Off .mp4",
+    "url": "https://eb.example"
+  },
+  "PYC-P01": {
+    "text": "Caring for Yourself While Raising Kids.pdf",
+    "url": "https://eb.example"
+  },
+  "PYC-P02": {
+    "text": "Clear, Consistent and Kind Parenting.pdf",
+    "url": "https://eb.example"
+  },
+  "PYC-P03": {
+    "text": "Creating Healthy Family Rules.pdf",
+    "url": "https://eb.example"
+  },
+  "PYC-P04": {
+    "text": "Helping a Child Through Sensory Overload.pdf",
+    "url": "https://eb.example"
+  },
+  "PYC-P05": {
+    "text": "Helping Children Manage Big Emotions.pdf",
+    "url": "https://eb.example"
+  },
+  "PYC-P06": {
+    "text": "Helping Children Manage School Stress.pdf",
+    "url": "https://eb.example"
+  },
+  "PYC-P07": {
+    "text": "Helping Children Stay Safe.pdf",
+    "url": "https://eb.example"
+  },
+  "PYC-P08": {
+    "text": "Helping Kids Cope with Loss.pdf",
+    "url": "https://eb.example"
+  },
+  "PYC-P09": {
+    "text": "Helping Siblings Work Through Conflict.pdf",
+    "url": "https://eb.example"
+  },
+  "PYC-P10": {
+    "text": "Keeping Calm When Behaviour Escalates.pdf",
+    "url": "https://eb.example"
+  },
+  "PYC-P11": {
+    "text": "Making Mornings and Nights Easier.pdf",
+    "url": "https://eb.example"
+  },
+  "PYC-P12": {
+    "text": "Protecting Kids in a Digital World.pdf",
+    "url": "https://eb.example"
+  },
+  "PYC-P13": {
+    "text": "Protecting Your Energy as a Parent.pdf",
+    "url": "https://eb.example"
+  },
+  "PYC-P14": {
+    "text": "Raising Independent, Capable Kids.pdf",
+    "url": "https://eb.example"
+  },
+  "PYC-P15": {
+    "text": "Reducing Homework Battles.pdf",
+    "url": "https://eb.example"
+  },
+  "PYC-P16": {
+    "text": "Responding to Difficult Behaviour Calmly.pdf",
+    "url": "https://eb.example"
+  },
+  "PYC-P17": {
+    "text": "Setting Boundaries Without Guilt.pdf",
+    "url": "https://eb.example"
+  },
+  "PYC-P18": {
+    "text": "Simple Ways to Stay Connected to Your Child.pdf",
+    "url": "https://eb.example"
+  },
+  "PYC-P19": {
+    "text": "Staying Calm as a Parent.pdf",
+    "url": "https://eb.example"
+  },
+  "PYC-P20": {
+    "text": "Supporting Children Through Big Emotions.pdf",
+    "url": "https://eb.example"
+  },
+  "PYC-P21": {
+    "text": "Supporting Children Through Change.pdf",
+    "url": "https://eb.example"
+  },
+  "PYC-P22": {
+    "text": "Supporting Your Child with ADHD.pdf",
+    "url": "https://eb.example"
+  },
+  "PYC-P23": {
+    "text": "Talking to Kids About Personal Boundaries.pdf",
+    "url": "https://eb.example"
+  },
+  "PYC-P24": {
+    "text": "Understanding and Supporting Autism at Home.pdf",
+    "url": "https://eb.example"
+  },
+  "PYC-P25": {
+    "text": "When to Worry About Your Child’s Behaviour.pdf",
+    "url": "https://eb.example"
+  },
+  "PYC-P26": {
+    "text": "When You Feel Like You’re Not Doing Enough.pdf",
+    "url": "https://eb.example"
+  },
+  "PYC-P27": {
+    "text": "Why Kids Have Meltdowns.pdf",
+    "url": "https://eb.example"
+  },
+  "PYC-P28": {
+    "text": "Working_Parent_Balance_Managing_Workload_and_Family_Demands_Emotional_Balance.pdf",
+    "url": "https://eb.example"
+  },
+  "PYC-V01": {
+    "text": "Boundaries That Help Children Feel Safe.mp4",
+    "url": "https://eb.example"
+  },
+  "PYC-V02": {
+    "text": "Finding Balance as a Working Parent.mp4",
+    "url": "https://eb.example"
+  },
+  "PYC-V03": {
+    "text": "Helping Children Calm When Feelings Get Too Big.mp4",
+    "url": "https://eb.example"
+  },
+  "PYC-V04": {
+    "text": "Helping Children Stay Safe.mp4",
+    "url": "https://eb.example"
+  },
+  "PYC-V05": {
+    "text": "Helping Siblings Navigate Conflict Safely.mp4",
+    "url": "https://eb.example"
+  },
+  "PYC-V06": {
+    "text": "Homework Strategies that work.mp4",
+    "url": "https://eb.example"
+  },
+  "PYC-V07": {
+    "text": "Teaching Children How to Handle Big Feelings.mp4",
+    "url": "https://eb.example"
+  },
+  "PYC-V08": {
+    "text": "Understanding Big Behaviours in Kids.mp4",
+    "url": "https://eb.example"
+  },
+  "PYC-V09": {
+    "text": "When challenging Behaviour is a Message.mp4",
+    "url": "https://eb.example"
+  },
+  "PYC-V10": {
+    "text": "When Parenting Feels Exhausting All the Time.mp4",
+    "url": "https://eb.example"
+  },
+  "PTN-P01": {
+    "text": "Balancing Screen Time and Real Life.pdf",
+    "url": "https://eb.example"
+  },
+  "PTN-P02": {
+    "text": "Building Healthy Friendships.pdf",
+    "url": "https://eb.example"
+  },
+  "PTN-P03": {
+    "text": "Healthy Sleep Habits for Teens.pdf",
+    "url": "https://eb.example"
+  },
+  "PTN-P04": {
+    "text": "Helping Teenagers Handle Life’s Challenges.pdf",
+    "url": "https://eb.example"
+  },
+  "PTN-P05": {
+    "text": "Helping Teens Manage Anxiety.pdf",
+    "url": "https://eb.example"
+  },
+  "PTN-P06": {
+    "text": "Helping Teens Take Responsibility.pdf",
+    "url": "https://eb.example"
+  },
+  "PTN-P07": {
+    "text": "Keeping Communication Open with Teens.pdf",
+    "url": "https://eb.example"
+  },
+  "PTN-P08": {
+    "text": "Not Letting Emotions Run the Show.pdf",
+    "url": "https://eb.example"
+  },
+  "PTN-P09": {
+    "text": "Saying What You Mean (Without Drama).pdf",
+    "url": "https://eb.example"
+  },
+  "PTN-P10": {
+    "text": "Supporting a Teen Through Low Mood.pdf",
+    "url": "https://eb.example"
+  },
+  "PTN-P11": {
+    "text": "Supporting Healthy Self-Esteem in Teens.pdf",
+    "url": "https://eb.example"
+  },
+  "PTN-P12": {
+    "text": "Understanding Risk-Taking in Teens.pdf",
+    "url": "https://eb.example"
+  },
+  "PTN-P13": {
+    "text": "Understanding Teen Emotions and Decisions.pdf",
+    "url": "https://eb.example"
+  },
+  "PTN-P14": {
+    "text": "When You Just Can’t Get Started on Schoolwork.pdf",
+    "url": "https://eb.example"
+  },
+  "PTN-P15": {
+    "text": "Working Through Conflict Between Teens and Parents.pdf",
+    "url": "https://eb.example"
+  },
+  "PTN-V01": {
+    "text": "Helping Teens Build Resilience.mp4",
+    "url": "https://eb.example"
+  },
+  "PTN-V02": {
+    "text": "Helping Teens Manage Stress and Anxiety.mp4",
+    "url": "https://eb.example"
+  },
+  "PTN-V03": {
+    "text": "Helping Teens Navigate Friendships and Peer Pressure.mp4",
+    "url": "https://eb.example"
+  },
+  "PTN-V04": {
+    "text": "Helping Teens Stay Safe and Well Online.mp4",
+    "url": "https://eb.example"
+  },
+  "PTN-V05": {
+    "text": "Navigating Conflict With Teens.mp4",
+    "url": "https://eb.example"
+  },
+  "PTN-V06": {
+    "text": "Recognising and Supporting Depression in Teens.mp4",
+    "url": "https://eb.example"
+  },
+  "PTN-V07": {
+    "text": "Supporting Healthy Sleep and Routines for Teens.mp4",
+    "url": "https://eb.example"
+  },
+  "PTN-V08": {
+    "text": "Supporting Teen Identity and Self-Esteem.mp4",
+    "url": "https://eb.example"
+  },
+  "PTN-V09": {
+    "text": "Supporting Teen Motivation — Without Pressure or Conflict.mp4",
+    "url": "https://eb.example"
+  },
+  "PTN-V10": {
+    "text": "Understanding Teen Risk-Taking.mp4",
+    "url": "https://eb.example"
+  },
+  "RFP-P04": {
+    "text": "Respectful Co-Parenting.pdf",
+    "url": "https://eb.example"
+  },
+  "RFP-P01": {
+    "text": "Staying Strong as a Single Parent.pdf",
+    "url": "https://eb.example"
+  },
+  "RFP-P02": {
+    "text": "Strengthening Communication in Your Family.pdf",
+    "url": "https://eb.example"
+  },
+  "RFP-P03": {
+    "text": "Strengthening Your Relationship with Your Child.pdf",
+    "url": "https://eb.example"
+  },
+  "SBC-P01": {
+    "text": "Handling Conflict on Site.pdf",
+    "url": "https://eb.example"
+  },
+  "SBC-P02": {
+    "text": "Looking Out for Your Mates.pdf",
+    "url": "https://eb.example"
+  },
+  "SBC-P03": {
+    "text": "Suicide Prevention Support for Construction Workers.pdf",
+    "url": "https://eb.example"
+  },
+  "SBC-P04": {
+    "text": "The Impact of Fatigue on Safety and Wellbeing.pdf",
+    "url": "https://eb.example"
+  },
+  "SBC-P05": {
+    "text": "Working Safely in Extreme Heat.pdf",
+    "url": "https://eb.example"
+  },
+  "SBC-V01": {
+    "text": "Fatigue on Site — When the Body Gets Tired, the Mind Follows.mp4",
+    "url": "https://eb.example"
+  },
+  "SBC-V02": {
+    "text": "Handling Conflict on Site — Staying Safe Under Pressure.mp4",
+    "url": "https://eb.example"
+  },
+  "SBC-V03": {
+    "text": "Looking Out for Each Other on Site.mp4",
+    "url": "https://eb.example"
+  },
+  "SBC-V04": {
+    "text": "Mateship on Site — Looking After Each Other.mp4",
+    "url": "https://eb.example"
+  },
+  "SHC-P01": {
+    "text": "Handling Aggression Early and Safely.pdf",
+    "url": "https://eb.example"
+  },
+  "SHC-P02": {
+    "text": "Maintaining_Boundaries_with_Patients_Emotional_Balance.pdf",
+    "url": "https://eb.example"
+  },
+  "SHC-P03": {
+    "text": "Staying Well While Caring for Others.pdf",
+    "url": "https://eb.example"
+  },
+  "SHC-P04": {
+    "text": "Taking Time to Debrief After Serious Incidents.pdf",
+    "url": "https://eb.example"
+  },
+  "SHC-P05": {
+    "text": "The Emotional Cost of Caring.pdf",
+    "url": "https://eb.example"
+  },
+  "SHC-V01": {
+    "text": "De-Escalation in Healthcare — Protecting Patients and Staff.mp4",
+    "url": "https://eb.example"
+  },
+  "SHC-V02": {
+    "text": "Healthy Boundaries in Healthcare.mp4",
+    "url": "https://eb.example"
+  },
+  "SHC-V03": {
+    "text": "Vicarious Trauma in Healthcare.mp4",
+    "url": "https://eb.example"
+  },
+  "SHC-V04": {
+    "text": "When caring takes a toll .mp4",
+    "url": "https://eb.example"
+  },
+  "SHC-V05": {
+    "text": "Why Debriefing Matters After Difficult Healthcare Events.mp4",
+    "url": "https://eb.example"
+  },
+  "SLG-P01": {
+    "text": "Looking After Your Wellbeing on the Road.pdf",
+    "url": "https://eb.example"
+  },
+  "SLG-P02": {
+    "text": "Mental Check Prompts Before You Load.pdf",
+    "url": "https://eb.example"
+  },
+  "SLG-P03": {
+    "text": "Sleeping Well on Rotating Shifts.pdf",
+    "url": "https://eb.example"
+  },
+  "SLG-P04": {
+    "text": "Staying Alert on the Road.pdf",
+    "url": "https://eb.example"
+  },
+  "SLG-P05": {
+    "text": "Staying Calm Behind the Wheel.pdf",
+    "url": "https://eb.example"
+  },
+  "SLG-P06": {
+    "text": "Staying Well on Long Trips.pdf",
+    "url": "https://eb.example"
+  },
+  "SLG-V01": {
+    "text": "Handling Conflict on Site — Staying Safe Under Pressure.mp4",
+    "url": "https://eb.example"
+  },
+  "SLG-V02": {
+    "text": "Loneliness on the Road  A Conversation for Logistics Workers.mp4",
+    "url": "https://eb.example"
+  },
+  "SLG-V03": {
+    "text": "Mateship on Site — Looking After Each Other.mp4",
+    "url": "https://eb.example"
+  },
+  "SLG-V04": {
+    "text": "Well-being on the Long Haul  A Real Conversation.mp4",
+    "url": "https://eb.example"
+  },
+  "SMF-P01": {
+    "text": "After a Close Call on Site.pdf",
+    "url": "https://eb.example"
+  },
+  "SMF-P02": {
+    "text": "Balancing Sleep, Nutrition and Mood on Shift.pdf",
+    "url": "https://eb.example"
+  },
+  "SMF-P03": {
+    "text": "Managing_Production_Pressures_Manufacturing_Emotional_Balance.pdf",
+    "url": "https://eb.example"
+  },
+  "SMF-P04": {
+    "text": "Repetitive_Strain_Injury_Prevention_Manufacturing_Emotional_Balance.pdf",
+    "url": "https://eb.example"
+  },
+  "SMF-P05": {
+    "text": "Safe Focus on the Job.pdf",
+    "url": "https://eb.example"
+  }
+}

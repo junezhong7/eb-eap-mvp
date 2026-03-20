@@ -10,3 +10,7 @@ local.settings.json
 .vs/
 
 index.html
+*.xls
+*.xlsx
+
+src/
