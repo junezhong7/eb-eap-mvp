@@ -12,3 +12,5 @@ local.settings.json
 index.html
 *.xls
 *.xlsx
+
+src/

@@ -1,6 +1,9 @@
 const rules = require('./rules.json');
 const resources = require('./resources.json');
 
+const BLOB_BASE = process.env.BLOB_BASE_URL
+    || 'https://steapresources.blob.core.windows.net/resources';
+
 module.exports = async function (request, context) {
     const introMessage = 'Base on your circumstance, please find the recommended resources as following';
     const q1 = request.query.get('q1');
@@ -20,12 +23,18 @@ module.exports = async function (request, context) {
 
     if (rule) {
         responseData.resources = (rule.resourceIds || [])
-            .map(resourceId => resources[resourceId])
-            .filter(Boolean)
-            .map(resource => ({
-                title: resource.text,
-                url: resource.url
-            }));
+            .map(resourceId => {
+                const resource = resources[resourceId];
+                if (!resource) return null;
+
+                // Blob naming convention: <ID>-<original file name>
+                const fileName = `${resourceId}-${resource.text}`;
+                return {
+                    title: resource.text,
+                    url: `${BLOB_BASE}/${encodeURIComponent(fileName)}`
+                };
+            })
+            .filter(Boolean);
     }
 
     if (q3 === 'c1' || q3 === 'c2') {
