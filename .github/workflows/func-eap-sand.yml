@@ -6,7 +6,7 @@ name: Sandbox - Build and deploy Node.js project to Azure Function App - func-ea
 on:
   push:
     branches:
-      - sand-1.1-BackEndHook
+      - sand
   workflow_dispatch:
 
 env:
