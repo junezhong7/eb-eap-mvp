@@ -4,7 +4,7 @@
 
 ## 项目结构
 
-```
+```text
 .
 ├── function_app.js           # 主入口文件
 ├── functions/
@@ -37,6 +37,19 @@ func start
 
 函数应该会在 `http://localhost:7071` 运行
 
+## 资源访问安全配置
+
+为了避免前端暴露 Blob 直链，项目使用了短时签名链接：
+
+- `RESOURCE_LINK_SECRET` - 签名密钥（生产环境必须设置为随机高强度字符串）
+- `RESOURCE_LINK_TTL_SECONDS` - 链接有效期（秒），默认 `300`，最大 `3600`
+- `BLOB_BASE_URL` - 资源 Blob 容器基础地址（不带文件名）
+- `BLOB_READ_SAS_TOKEN` - 可选，后端读取私有 Blob 容器时使用（不要暴露到前端）
+
+`/api/recommend` 会返回 `/api/resource` 的签名地址，资源文件通过后端代理输出，并带 `Content-Disposition: inline` 与 `no-store` 缓存策略。
+
+建议将 Blob 容器设置为私有，并仅通过 `/api/resource` 访问。
+
 ## API 端点
 
 ### GET /api/recommend
@@ -44,13 +57,14 @@ func start
 根据三个查询参数返回推荐资源。
 
 **查询参数：**
+
 - `q1` - 用户级别 (e.g., "beginner")
 - `q2` - 主题 (e.g., "api")
 - `q3` - 类型 (e.g., "external")
 
 **示例：**
 
-```
+```http
 GET http://localhost:7071/api/recommend?q1=beginner&q2=api&q3=external
 ```
 
@@ -61,7 +75,7 @@ GET http://localhost:7071/api/recommend?q1=beginner&q2=api&q3=external
   "resources": [
     {
       "title": "API Starter Guide",
-      "link": "https://sharepoint-link"
+      "url": "https://sharepoint-link"
     }
   ]
 }

@@ -1,14 +1,22 @@
 const rules = require('./rules.json');
 const resources = require('./resources.json');
+const { createResourceToken } = require('./resourceLink');
 
-const BLOB_BASE = process.env.BLOB_BASE_URL
-    || 'https://steapresources.blob.core.windows.net/resources';
+function getApiOrigin(request) {
+    try {
+        const parsed = new URL(request.url);
+        return `${parsed.protocol}//${parsed.host}`;
+    } catch {
+        return '';
+    }
+}
 
 module.exports = async function (request, context) {
     const introMessage = 'Base on your circumstance, please find the recommended resources as following';
     const q1 = request.query.get('q1');
     const q2 = request.query.get('q2');
     const q3 = request.query.get('q3');
+    const apiOrigin = getApiOrigin(request);
 
     const key = `${q1}_${q2}`;
     const rule = rules[key];
@@ -27,11 +35,17 @@ module.exports = async function (request, context) {
                 const resource = resources[resourceId];
                 if (!resource) return null;
 
-                // Blob naming convention: <ID>-<original file name>
-                const fileName = `${resourceId}-${resource.text}`;
+                const token = createResourceToken(resourceId);
+                const query = new URLSearchParams({
+                    id: resourceId,
+                    exp: String(token.expiresAt),
+                    sig: token.signature
+                });
+
+                const protectedPath = `/api/resource?${query.toString()}`;
                 return {
                     title: resource.text,
-                    url: `${BLOB_BASE}/${encodeURIComponent(fileName)}`
+                    url: `${apiOrigin}${protectedPath}`
                 };
             })
             .filter(Boolean);
