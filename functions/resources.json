@@ -1,4 +1,4 @@
-{
+﻿{
   "AOK-P01": {
     "text": "Backing a Workmate to Get Support.pdf",
     "url": "https://eb.example"
@@ -853,6 +853,10 @@
   },
   "SMF-P05": {
     "text": "Safe Focus on the Job.pdf",
+    "url": "https://eb.example"
+  },
+  "WB-P01": {
+    "text": "Wellbeing Basics.pdf",
     "url": "https://eb.example"
   }
 }
